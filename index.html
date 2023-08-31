@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Hub</title>
+    <!-- css daisy khala -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/64bf242837.js" crossorigin="anonymous"></script>
+
+    <style>
+        img {
+            width: 400px;
+            height: 150px;
+        }
+
+        hr {
+            border-top: 1px solid rgb(207, 203, 203);
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+
+        <h1 class="text-4xl md:text-5xl lg:text-5xl font-bold py-4 text-center">AI Universe Hub</h1>
+        <div onclick = "sortByDate()" class="flex justify-center my-4 ">
+            <button class="btn btn-lg btn-accent text-white p-4 text-md">Sort By Date</button>
+        </div>
+
+    </header>
+
+    <main>
+
+        <!-- <section class="container  mx-auto bg-slate-300 p-6 text-center rounded">
+            <div>
+                <input id="search-name-field" type="text" placeholder="Search...."
+                    class="input input-bordered w-[60%] md:w-full lg:w-full max-w-xs outline-1" />
+                <button onclick="handleSearch()" class="btn btn-accent text-white p-4 ">Search</button>
+            </div>
+        </section> -->
+
+        <!-- card section -->
+        <section class="container mx-auto my-12">
+            <!-- card container -->
+            <div id="ai-card-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+
+
+            </div>
+
+        </section>
+
+        <!-- basic modal section -->
+        <section>
+            <!-- You can open the modal using ID.showModal() method -->
+            <!-- <button class="btn" onclick="show_details_model.showModal()">open modal</button> -->
+            <dialog id="show_details_model" class="modal py-8">
+                <form method="dialog" class="modal-box w-full">
+                    <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 bg-[#33BBC5] text-white">✕</button>
+
+                    <!-- my div -->
+                        
+                    <div id="show-details-container" class="flex flex-row justify-between gap-4">
+                        
+
+                    </div>
+                    
+
+                   <!-- ..... -->
+                    
+                </form>
+            </dialog>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+    <!-- js -->
+    <script src="./js/trial.js"></script>
+
+</body>
+
+</html>
